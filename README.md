@@ -94,6 +94,9 @@ console.log("a defined? " + (typeof a !== "undefined"));
 console.log("b defined? " + (typeof b !== "undefined"));
 ```
 
+- a is defined in the local scope of the function so is not visible outside the function.
+- b is global and so can be available outside the function.
+
 2. Write a function that would allow you to do this using a closure. (This is another interview question we've seen before - when you're ready for answers, view an explanation [here](https://www.coderbyte.com/algorithm/3-common-javascript-closure-questions)).
 
 ```js
@@ -103,6 +106,30 @@ addSix(21); // returns 27
 ```
 
 3. Research the differences between functional programming and object oriented programming. Then, describe the pros and cons of functional programming vs object-oriented programming. This is a common interview question and great practice!
+
+Pros of Functional Programming
+
+1. functional programming is better suited for data manipulation in bulk
+2. Supports parallel programming
+3. Best if things in a project are small or fixed and there are a lot of operations
+
+Cons of Functional Programming
+
+1. Difficult to transfer real world scenarios (best suited for objects) to functional code
+2. Occupies much more memory
+
+Pros of Object Oriented Programming
+
+1. Maps nicely to real world requirements
+2. Can add new objects easily including those inherited from other objects.
+3. Best in manipulating objects with minimal need for operations
+4. Can be packaged in nice concise containers for reuse
+5. Can contain private variables that are not exposed to the public.
+
+Cons of Object Oriented Programming
+
+1. Not very good in manipulating data in bulk. Requires nested loops to parse data.
+2. Too much inheritance can be confusing.
 
 ## Resources
 
